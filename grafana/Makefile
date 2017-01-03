@@ -13,7 +13,7 @@
 # limitations under the License.
 
 TAG = v4.0.2
-PREFIX = gcr.io/google_containers
+PREFIX = registry.dev.moneybird.net
 
 all: container
 
