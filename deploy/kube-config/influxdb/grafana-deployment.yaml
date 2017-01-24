@@ -13,7 +13,8 @@ spec:
     spec:
       volumes:
       - name: grafana-storage
-        emptyDir: {}
+        persistentVolumeClaim:
+          claimName: grafana-storage
       containers:
       - name: grafana
         image: registry.dev.moneybird.net/heapster_grafana:v4.0.2

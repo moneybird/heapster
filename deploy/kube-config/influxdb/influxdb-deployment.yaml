@@ -13,7 +13,8 @@ spec:
     spec:
       volumes:
       - name: influxdb-storage
-        emptyDir: {}
+        persistentVolumeClaim:
+          claimName: influxdb-storage
       containers:
       - name: influxdb
         image: kubernetes/heapster_influxdb:v0.6
